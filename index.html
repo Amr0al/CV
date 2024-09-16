@@ -16,7 +16,7 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
-            padding: 40px 20px;
+            padding-top: 60px; /* padding to allow for fixed navbar */
         }
         .container {
             max-width: 1000px;
@@ -98,66 +98,73 @@
             background: #ddd;
             margin: 40px 0;
         }
-        /* الفهرس المنسدل */
-        .toc {
+
+        /* Style for the fixed top navbar */
+        .navbar {
             position: fixed;
-            top: 100px;
-            left: 20px;
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-        .toc button {
+            top: 0;
+            width: 100%;
             background-color: #0056b3;
             color: white;
-            padding: 10px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .navbar .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
             text-align: left;
         }
-        .toc button:hover {
-            background-color: #004494;
+        .navbar .dropdown-content a:hover {
+            background-color: #f1f1f1;
         }
-        .toc-content {
-            display: none;
-            margin-top: 10px;
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
         }
-        .toc-content ul {
-            list-style: none;
-            padding-left: 0;
+        .navbar .dropdown:hover .dropbtn {
+            background-color: #007bff;
         }
-        .toc-content ul li {
-            margin-bottom: 10px;
-        }
-        .toc-content ul li a {
-            color: #0056b3;
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: 500;
+            font-size: 17px;
         }
-        .toc-content ul li a:hover {
-            text-decoration: underline;
+        .navbar a:hover {
+            background-color: #007bff;
         }
     </style>
 </head>
 <body>
 
-    <!-- الفهرس المنسدل -->
-    <div class="toc">
-        <button onclick="toggleToc()">Table of Contents</button>
-        <div class="toc-content" id="tocContent">
-            <ul>
-                <li><a href="#personal-info">Personal Information</a></li>
-                <li><a href="#objective">Objective</a></li>
-                <li><a href="#education">Educational Qualifications</a></li>
-                <li><a href="#experience">Experience Acquired</a></li>
-                <li><a href="#skills">Key Skills</a></li>
-                <li><a href="#courses">Courses and Certifications</a></li>
-                <li><a href="#languages">Languages</a></li>
-            </ul>
+    <!-- Fixed navbar with dropdown -->
+    <div class="navbar">
+        <div class="dropdown">
+            <a class="dropbtn">Table of Contents</a>
+            <div class="dropdown-content" id="tocContent">
+                <a href="#personal-info">Personal Information</a>
+                <a href="#objective">Objective</a>
+                <a href="#education">Educational Qualifications</a>
+                <a href="#experience">Experience Acquired</a>
+                <a href="#skills">Key Skills</a>
+                <a href="#courses">Courses and Certifications</a>
+                <a href="#languages">Languages</a>
+            </div>
         </div>
     </div>
 
@@ -231,24 +238,35 @@
                     <ul>
                         <li>Construction Projects Planning & Scheduling</li>
                         <li>Project's Control & Monitoring Reports</li>
-                                                <li>Construction Claim (Time & cost)</li>
-                        <li>Earned Value Method</li>
-                    </ul>
-                </li>
-                <li><strong>Petrojet</strong> - 1100 Acre Project, Planning Engineer (Jul 2019 – Jan 2020)
-                    <ul>
-                        <li>Construction Projects Planning & Scheduling</li>
-                        <li>Project's Control & Monitoring Reports</li>
                         <li>Construction Claim (Time & cost)</li>
                         <li>Earned Value Method</li>
+                        <li>Contracts Administration</li>
+                        <li>Resource, Procurement & Risk Management</li>
                     </ul>
                 </li>
-                <li><strong>Misr Concrete Development Co.</strong> - Various Projects in Egypt, Planning Engineer (Nov 2016 – Jun 2019)
+                <li><strong>M.I.G.</strong> - Public Housing Projects, Site Engineer (Jan 2018 – Jul 2019)
                     <ul>
-                        <li>Construction Projects Planning & Scheduling</li>
-                        <li>Project's Control & Monitoring Reports</li>
-                        <li>Earned Value Method</li>
-                        <li>Project's Budget & Cash Flow Preparation</li>
+                        <li>Undertaking technical and feasibility studies including site investigations</li>
+                        <li>Using a range of computer software for developing detailed designs</li>
+                        <li>Managing budgets and project resources</li>
+                        <li>Scheduling material and equipment purchases and deliveries</li>
+                        <li>Ensuring projects comply with legal requirements and are completed on time</li>
+                    </ul>
+                </li>
+                <li><strong>Sam Shroq Est.</strong> - Ministry of Finance, Maintenance & Operation, Site Engineer (Oct 2015 – Jan 2018)
+                    <ul>
+                        <li>Technical and feasibility studies including site investigations</li>
+                        <li>Managing budgets and project resources</li>
+                        <li>Scheduling material and equipment purchases and deliveries</li>
+                        <li>Ensuring the project complies with legal requirements</li>
+                    </ul>
+                </li>
+                <li><strong>Egyptian International Group</strong> - Public Housing, Site Engineer (Aug 2014 – Oct 2015)
+                    <ul>
+                        <li>Technical and feasibility studies</li>
+                        <li>Resolving design and development problems</li>
+                        <li>Managing budgets and project resources</li>
+                        <li>Ensuring the project complies with legal requirements and is completed on time</li>
                     </ul>
                 </li>
             </ul>
@@ -259,12 +277,15 @@
         <div class="section" id="skills">
             <h3 class="section-title">Key Skills</h3>
             <ul>
-                <li>Proficient in Primavera P6, MS Project, and MS Office (Excel, Word, PowerPoint)</li>
-                <li>Strong knowledge of project planning, scheduling, and delay analysis</li>
-                <li>Experience in construction claim preparation and cost management</li>
-                <li>Excellent problem-solving and analytical skills</li>
-                <li>Strong communication and teamwork abilities</li>
-                <li>Fluent in English and Arabic</li>
+                <li>Delay Analysis and EOT Preparation</li>
+                <li>Project Planning and Scheduling</li>
+                <li>Construction Claims (Time and Cost)</li>
+                <li>Earned Value Management (EVM)</li>
+                <li>Project Monitoring and Control</li>
+                <li>Resource and Risk Management</li>
+                <li>Procurement Management</li>
+                <li>Team Collaboration and Leadership</li>
+                <li>Excellent Communication Skills</li>
             </ul>
         </div>
 
@@ -273,10 +294,12 @@
         <div class="section" id="courses">
             <h3 class="section-title">Courses and Certifications</h3>
             <ul>
-                <li>Project Management Professional (PMP) - In Progress</li>
-                <li>Primavera P6 Advanced User</li>
-                <li>Construction Claims Management</li>
-                <li>Earned Value Management (EVM)</li>
+                <li>Primavera P6 Advanced Training</li>
+                <li>Project Management Professional (PMP) - In progress</li>
+                <li>Delay Analysis and Claims Management</li>
+                <li>Advanced Excel and Power BI for Project Management</li>
+                <li>AutoCAD 2D & 3D Design</li>
+                <li>SAP2000 Structural Analysis</li>
             </ul>
         </div>
 
@@ -285,22 +308,10 @@
         <div class="section" id="languages">
             <h3 class="section-title">Languages</h3>
             <ul>
-                <li>Arabic: Native</li>
-                <li>English: Fluent</li>
+                <li>Arabic - Native</li>
+                <li>English - Fluent</li>
             </ul>
         </div>
-
     </div>
-
-    <script>
-        function toggleToc() {
-            var tocContent = document.getElementById('tocContent');
-            if (tocContent.style.display === "none" || tocContent.style.display === "") {
-                tocContent.style.display = "block";
-            } else {
-                tocContent.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
