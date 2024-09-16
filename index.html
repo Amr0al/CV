@@ -98,9 +98,54 @@
             background: #ddd;
             margin: 40px 0;
         }
+        /* الفهرس */
+        .toc {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .toc h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .toc ul li {
+            margin-bottom: 10px;
+        }
+        .toc ul li a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toc ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+
+    <!-- الفهرس -->
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#personal-info">Personal Information</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#education">Educational Qualifications</a></li>
+            <li><a href="#experience">Experience Acquired</a></li>
+            <li><a href="#skills">Key Skills</a></li>
+            <li><a href="#courses">Courses and Certifications</a></li>
+            <li><a href="#languages">Languages</a></li>
+        </ul>
+    </div>
+
     <div class="container">
         <img src="https://cdn.vectorstock.com/i/1000x1000/99/71/businessman-icon-vector-22999971.jpg" alt="Amr Elhadary" class="avatar">
         <h1>Amr Mahmoud Abdelaziz Elhadary</h1>
@@ -113,7 +158,7 @@
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="personal-info">
             <h3 class="section-title">Personal Information</h3>
             <p><strong>Birth Date:</strong> 15th January 1992</p>
             <p><strong>Place of Birth:</strong> Egypt</p>
@@ -123,14 +168,14 @@
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="objective">
             <h3 class="section-title">Objective</h3>
             <p>Seeking a career opportunity within the Planning engineering field in a challenging and dynamic environment, where my academic background, work experience, and communication skills can be applied and further enhanced.</p>
         </div>
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="education">
             <h3 class="section-title">Educational Qualifications</h3>
             <p><strong>University:</strong> Faculty of Engineering, Tanta University</p>
             <p><strong>Department:</strong> BSc. Civil Engineering, Public Work Division</p>
@@ -140,7 +185,7 @@
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="experience">
             <h3 class="section-title">Experience Acquired</h3>
             <ul>
                 <li><strong>Shibh Al Jazira Contracting Company (SAJCO)</strong> - Neom Projects, Delay Analyst (Feb 2023 – Now)
@@ -180,26 +225,12 @@
                 <li><strong>M.I.G.</strong> - Public Housing Projects, Site Engineer (Jan 2018 – Jul 2019)
                     <ul>
                         <li>Undertaking technical and feasibility studies including site investigations</li>
-                        <li>Using a range of computer software for developing detailed designs</li>
-                        <li>Managing budgets and project resources</li>
-                        <li>Scheduling material and equipment purchases and deliveries</li>
-                        <li>Ensuring projects comply with legal requirements and are completed on time</li>
+                        <li>Overseeing building work and maintenance of sites</li>
                     </ul>
                 </li>
-                <li><strong>Sam Shroq Est.</strong> - Ministry of Finance, Maintenance & Operation, Site Engineer (Oct 2015 – Jan 2018)
+                <li><strong>IMAC</strong> - Bridges & Infrastructure Projects, Site Engineer (Sep 2014 – Jan 2018)
                     <ul>
-                        <li>Technical and feasibility studies including site investigations</li>
-                        <li>Managing budgets and project resources</li>
-                        <li>Scheduling material and equipment purchases and deliveries</li>
-                        <li>Ensuring the project complies with legal requirements</li>
-                    </ul>
-                </li>
-                <li><strong>Egyptian International Group</strong> - Public Housing, Site Engineer (Aug 2014 – Oct 2015)
-                    <ul>
-                        <li>Technical and feasibility studies</li>
-                        <li>Resolving design and development problems</li>
-                        <li>Managing budgets and project resources</li>
-                        <li>Ensuring the project complies with legal requirements and is completed on time</li>
+                        <li>Execution of Civil Work (Earthwork, Bridges and Road Construction)</li>
                     </ul>
                 </li>
             </ul>
@@ -207,38 +238,37 @@
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="skills">
             <h3 class="section-title">Key Skills</h3>
             <ul>
                 <li>Delay Analysis and EOT Preparation</li>
-                <li>Project Planning and Scheduling</li>
-                <li>Construction Claims (Time and Cost)</li>
-                <li>Earned Value Management (EVM)</li>
-                <li>Project Monitoring and Control</li>
-                <li>Resource and Risk Management</li>
-                <li>Procurement Management</li>
-                <li>Team Collaboration and Leadership</li>
-                <li>Excellent Communication Skills</li>
+                <li>Primavera P6 Professional</li>
+                <li>Cost Control</li>
+                <li>Resource & Risk Management</li>
+                <li>Project Planning & Scheduling</li>
+                <li>MS Project</li>
+                <li>AutoCAD</li>
+                <li>Excel, Power BI</li>
             </ul>
         </div>
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="courses">
             <h3 class="section-title">Courses and Certifications</h3>
             <ul>
                 <li>Primavera P6 Advanced Training</li>
-                <li>Project Management Professional (PMP) - In progress</li>
-                <li>Delay Analysis and Claims Management</li>
-                <li>Advanced Excel and Power BI for Project Management</li>
-                <li>AutoCAD 2D & 3D Design</li>
-                <li>SAP2000 Structural Analysis</li>
+                <li>Construction Project Management</li>
+                <li>Contractual Claims Preparation</li>
+                <li>AutoCAD</li>
+                <li>Project Management Professional (PMP)</li>
+                <li>Negotiation Skills</li>
             </ul>
         </div>
 
         <hr>
 
-        <div class="section">
+        <div class="section" id="languages">
             <h3 class="section-title">Languages</h3>
             <ul>
                 <li>Arabic - Native</li>
