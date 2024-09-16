@@ -98,52 +98,67 @@
             background: #ddd;
             margin: 40px 0;
         }
-        /* الفهرس */
+        /* الفهرس المنسدل */
         .toc {
             position: fixed;
             top: 100px;
-            left: 20px; /* تغيير الفهرس إلى اليسار */
-            background: #f4f4f4; /* نفس لون خلفية الصفحة */
+            left: 20px;
+            background: #f4f4f4;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
-        .toc h3 {
+        .toc button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
             font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
         }
-        .toc ul {
+        .toc button:hover {
+            background-color: #004494;
+        }
+        .toc-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .toc-content ul {
             list-style: none;
             padding-left: 0;
         }
-        .toc ul li {
+        .toc-content ul li {
             margin-bottom: 10px;
         }
-        .toc ul li a {
+        .toc-content ul li a {
             color: #0056b3;
             text-decoration: none;
             font-weight: 500;
         }
-        .toc ul li a:hover {
+        .toc-content ul li a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- الفهرس -->
+    <!-- الفهرس المنسدل -->
     <div class="toc">
-        <h3>Table of Contents</h3>
-        <ul>
-            <li><a href="#personal-info">Personal Information</a></li>
-            <li><a href="#objective">Objective</a></li>
-            <li><a href="#education">Educational Qualifications</a></li>
-            <li><a href="#experience">Experience Acquired</a></li>
-            <li><a href="#skills">Key Skills</a></li>
-            <li><a href="#courses">Courses and Certifications</a></li>
-            <li><a href="#languages">Languages</a></li>
-        </ul>
+        <button onclick="toggleToc()">Table of Contents</button>
+        <div class="toc-content" id="tocContent">
+            <ul>
+                <li><a href="#personal-info">Personal Information</a></li>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#education">Educational Qualifications</a></li>
+                <li><a href="#experience">Experience Acquired</a></li>
+                <li><a href="#skills">Key Skills</a></li>
+                <li><a href="#courses">Courses and Certifications</a></li>
+                <li><a href="#languages">Languages</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="container">
@@ -216,21 +231,24 @@
                     <ul>
                         <li>Construction Projects Planning & Scheduling</li>
                         <li>Project's Control & Monitoring Reports</li>
+                                                <li>Construction Claim (Time & cost)</li>
+                        <li>Earned Value Method</li>
+                    </ul>
+                </li>
+                <li><strong>Petrojet</strong> - 1100 Acre Project, Planning Engineer (Jul 2019 – Jan 2020)
+                    <ul>
+                        <li>Construction Projects Planning & Scheduling</li>
+                        <li>Project's Control & Monitoring Reports</li>
                         <li>Construction Claim (Time & cost)</li>
                         <li>Earned Value Method</li>
-                        <li>Contracts Administration</li>
-                        <li>Resource, Procurement & Risk Management</li>
                     </ul>
                 </li>
-                <li><strong>M.I.G.</strong> - Public Housing Projects, Site Engineer (Jan 2018 – Jul 2019)
+                <li><strong>Misr Concrete Development Co.</strong> - Various Projects in Egypt, Planning Engineer (Nov 2016 – Jun 2019)
                     <ul>
-                        <li>Undertaking technical and feasibility studies including site investigations</li>
-                        <li>Overseeing building work and maintenance of sites</li>
-                    </ul>
-                </li>
-                <li><strong>IMAC</strong> - Bridges & Infrastructure Projects, Site Engineer (Sep 2014 – Jan 2018)
-                    <ul>
-                        <li>Execution of Civil Work (Earthwork, Bridges and Road Construction)</li>
+                        <li>Construction Projects Planning & Scheduling</li>
+                        <li>Project's Control & Monitoring Reports</li>
+                        <li>Earned Value Method</li>
+                        <li>Project's Budget & Cash Flow Preparation</li>
                     </ul>
                 </li>
             </ul>
@@ -241,14 +259,12 @@
         <div class="section" id="skills">
             <h3 class="section-title">Key Skills</h3>
             <ul>
-                <li>Delay Analysis and EOT Preparation</li>
-                <li>Primavera P6 Professional</li>
-                <li>Cost Control</li>
-                <li>Resource & Risk Management</li>
-                <li>Project Planning & Scheduling</li>
-                <li>MS Project</li>
-                <li>AutoCAD</li>
-                <li>Excel, Power BI</li>
+                <li>Proficient in Primavera P6, MS Project, and MS Office (Excel, Word, PowerPoint)</li>
+                <li>Strong knowledge of project planning, scheduling, and delay analysis</li>
+                <li>Experience in construction claim preparation and cost management</li>
+                <li>Excellent problem-solving and analytical skills</li>
+                <li>Strong communication and teamwork abilities</li>
+                <li>Fluent in English and Arabic</li>
             </ul>
         </div>
 
@@ -257,12 +273,10 @@
         <div class="section" id="courses">
             <h3 class="section-title">Courses and Certifications</h3>
             <ul>
-                <li>Primavera P6 Advanced Training</li>
-                <li>Construction Project Management</li>
-                <li>Contractual Claims Preparation</li>
-                <li>AutoCAD</li>
-                <li>Project Management Professional (PMP)</li>
-                <li>Negotiation Skills</li>
+                <li>Project Management Professional (PMP) - In Progress</li>
+                <li>Primavera P6 Advanced User</li>
+                <li>Construction Claims Management</li>
+                <li>Earned Value Management (EVM)</li>
             </ul>
         </div>
 
@@ -271,10 +285,22 @@
         <div class="section" id="languages">
             <h3 class="section-title">Languages</h3>
             <ul>
-                <li>Arabic - Native</li>
-                <li>English - Fluent</li>
+                <li>Arabic: Native</li>
+                <li>English: Fluent</li>
             </ul>
         </div>
+
     </div>
+
+    <script>
+        function toggleToc() {
+            var tocContent = document.getElementById('tocContent');
+            if (tocContent.style.display === "none" || tocContent.style.display === "") {
+                tocContent.style.display = "block";
+            } else {
+                tocContent.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
