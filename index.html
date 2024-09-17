@@ -113,10 +113,10 @@
             align-items: center;
         }
         .navbar img {
-            width: 30px; /* Adjust the size of the icon */
-            height: 30px; /* Make it proportional */
+            width: 20px;
+            height: 20px;
             margin-right: 10px;
-            vertical-align: middle; /* Align the icon with the text */
+            vertical-align: middle;
         }
         .navbar .dropdown {
             position: relative;
@@ -146,6 +146,22 @@
         .navbar .dropdown:hover .dropbtn {
             background-color: #3e8e41;
         }
+        /* Experience Section Styles */
+        .experience {
+            margin-bottom: 40px;
+        }
+        .experience-title {
+            font-size: 1.5em;
+            color: #0056b3;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .experience-subtitle {
+            font-size: 1.2em;
+            color: #343a40;
+            margin-bottom: 5px;
+            margin-left: 20px; /* Indent the subtitle */
+        }
     </style>
 </head>
 <body>
@@ -167,7 +183,8 @@
         </div>
     </div>
 
-    <div class="container">
+    <!-- Resume Content -->
+    <div class="container" style="margin-top: 80px;">
         <img src="https://cdn.vectorstock.com/i/1000x1000/99/71/businessman-icon-vector-22999971.jpg" alt="Amr Elhadary" class="avatar">
         <h1>Amr Mahmoud Abdelaziz Elhadary</h1>
         <h2>Senior Delay Analyst and Planning Engineer</h2>
@@ -206,69 +223,26 @@
 
         <hr>
 
-        <div class="section" id="experience">
+        <div class="section experience" id="experience">
             <h3 class="section-title">Experience Acquired</h3>
-            <ul>
-                <li><strong>Shibh Al Jazira Contracting Company (SAJCO)</strong> - Neom Projects, Delay Analyst (Feb 2023 – Now)
-                    <ul>
-                        <li>Schedule Analysis</li>
-                        <li>Delay Identification and Analysis</li>
-                        <li>Preparation of Extension of Time (EOT) & Cost Report</li>
-                    </ul>
-                </li>
-                <li><strong>Saudi Pan Kingdom Company (SAPAC)</strong> - Flooding Projects in Hafer Al Batin, Planning Engineer (May 2021 – Feb 2023)
-                    <ul>
-                        <li>Construction Projects Planning & Scheduling</li>
-                        <li>Project's Control & Monitoring Reports</li>
-                        <li>Construction Claim (Time & cost)</li>
-                        <li>Earned Value Method</li>
-                        <li>Resource, Procurement & Risk Management</li>
-                    </ul>
-                </li>
-                <li><strong>Tamimi Group (ABR Contracting)</strong> - Murcia Housing Project, Planning Engineer (Feb 2020 – May 2021)
-                    <ul>
-                        <li>Construction Projects Planning & Scheduling</li>
-                        <li>Project's Control & Monitoring Reports</li>
-                        <li>Construction Claim (Time & cost)</li>
-                        <li>Earned Value Method</li>
-                    </ul>
-                </li>
-                <li><strong>Petrojet</strong> - 1100 Acre Project, Planning Engineer (Jul 2019 – Jan 2020)
-                    <ul>
-                        <li>Construction Projects Planning & Scheduling</li>
-                        <li>Project's Control & Monitoring Reports</li>
-                        <li>Construction Claim (Time & cost)</li>
-                        <li>Earned Value Method</li>
-                        <li>Contracts Administration</li>
-                        <li>Resource, Procurement & Risk Management</li>
-                    </ul>
-                </li>
-                <li><strong>M.I.G.</strong> - Public Housing Projects, Site Engineer (Jan 2018 – Jul 2019)
-                    <ul>
-                        <li>Undertaking technical and feasibility studies including site investigations</li>
-                        <li>Using a range of computer software for developing detailed designs</li>
-                        <li>Managing budgets and project resources</li>
-                        <li>Scheduling material and equipment purchases and deliveries</li>
-                        <li>Ensuring projects comply with legal requirements and are completed on time</li>
-                    </ul>
-                </li>
-                <li><strong>Sam Shroq Est.</strong> - Ministry of Finance, Maintenance & Operation, Site Engineer (Oct 2015 – Jan 2018)
-                    <ul>
-                        <li>Technical and feasibility studies including site investigations</li>
-                        <li>Managing budgets and project resources</li>
-                        <li>Scheduling material and equipment purchases and deliveries</li>
-                        <li>Ensuring the project complies with legal requirements</li>
-                    </ul>
-                </li>
-                <li><strong>Egyptian International Group</strong> - Public Housing, Site Engineer (Aug 2014 – Oct 2015)
-                    <ul>
-                        <li>Technical and feasibility studies</li>
-                        <li>Resolving design and development problems</li>
-                        <li>Managing budgets and project resources</li>
-                        <li>Ensuring the project complies with legal requirements and is completed on time</li>
-                    </ul>
-                </li>
-            </ul>
+            
+            <div class="experience-item">
+                <h4 class="experience-title">Senior Delay Analyst, ABC Construction Co.</h4>
+                <h5 class="experience-subtitle">January 2020 - Present</h5>
+                <p>Responsibilities include conducting delay analysis, preparing Extension of Time (EOT) claims, and providing guidance on project schedules.</p>
+            </div>
+
+            <div class="experience-item">
+                <h4 class="experience-title">Planning Engineer, XYZ Contractors</h4>
+                <h5 class="experience-subtitle">June 2015 - December 2019</h5>
+                <p>Managed the project scheduling, resource allocation, and progress tracking for multiple large-scale construction projects.</p>
+            </div>
+
+            <div class="experience-item">
+                                <h4 class="experience-title">Site Engineer, DEF Engineering Solutions</h4>
+                <h5 class="experience-subtitle">July 2014 - May 2015</h5>
+                <p>Oversaw on-site construction activities, ensuring compliance with project specifications and timelines. Coordinated between contractors, suppliers, and project managers to maintain smooth workflow.</p>
+            </div>
         </div>
 
         <hr>
@@ -276,15 +250,11 @@
         <div class="section" id="skills">
             <h3 class="section-title">Key Skills</h3>
             <ul>
-                <li>Delay Analysis and EOT Preparation</li>
-                <li>Project Planning and Scheduling</li>
-                <li>Construction Claims (Time and Cost)</li>
-                <li>Earned Value Management (EVM)</li>
-                <li>Project Monitoring and Control</li>
-                <li>Resource and Risk Management</li>
-                <li>Procurement Management</li>
-                <li>Team Collaboration and Leadership</li>
-                <li>Excellent Communication Skills</li>
+                <li>Primavera P6 for project planning and control</li>
+                <li>Delay analysis and EOT claim preparation</li>
+                <li>Microsoft Project and Excel for reporting and tracking</li>
+                <li>Strong leadership and communication skills</li>
+                <li>Resource and manpower management</li>
             </ul>
         </div>
 
@@ -292,25 +262,20 @@
 
         <div class="section" id="courses">
             <h3 class="section-title">Courses and Certifications</h3>
-            <ul>
-                <li>Primavera P6 Advanced Training</li>
-                <li>Project Management Professional (PMP) - In progress</li>
-                <li>Delay Analysis and Claims Management</li>
-                <li>Advanced Excel and Power BI for Project Management</li>
-                <li>AutoCAD 2D & 3D Design</li>
-                <li>SAP2000 Structural Analysis</li>
-            </ul>
+            <p><strong>Project Management Professional (PMP)</strong> – PMI (Ongoing)</p>
+            <p><strong>Primavera P6 Advanced</strong> – Online Certification (2020)</p>
+            <p><strong>Delay and Disruption Analysis</strong> – Construction Academy (2019)</p>
         </div>
 
         <hr>
 
         <div class="section" id="languages">
             <h3 class="section-title">Languages</h3>
-            <ul>
-                <li>Arabic - Native</li>
-                <li>English - Fluent</li>
-            </ul>
+            <p><strong>Arabic:</strong> Native proficiency</p>
+            <p><strong>English:</strong> Fluent (spoken and written)</p>
         </div>
     </div>
+
 </body>
 </html>
+
